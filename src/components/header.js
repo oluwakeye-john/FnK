@@ -14,7 +14,7 @@ const HeaderComponent = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.bg};
   z-index: 1;
 `;
 

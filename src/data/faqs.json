@@ -1,0 +1,38 @@
+[
+  {
+    "category": "General",
+    "questions": [
+      "Lorem ipsum marledsum",
+      "Lorem ipsum marledsum",
+      "Lorem ipsum marledsum",
+      "Lorem ipsum marledsum"
+    ]
+  },
+  {
+    "category": "Fees & charges",
+    "questions": [
+      "Lorem ipsum marledsum",
+      "Lorem ipsum marledsum",
+      "Lorem ipsum marledsum",
+      "Lorem ipsum marledsum"
+    ]
+  },
+  {
+    "category": "Terms & conditions",
+    "questions": [
+      "Lorem ipsum marledsum",
+      "Lorem ipsum marledsum",
+      "Lorem ipsum marledsum",
+      "Lorem ipsum marledsum"
+    ]
+  },
+  {
+    "category": "Account",
+    "questions": [
+      "Lorem ipsum marledsum",
+      "Lorem ipsum marledsum",
+      "Lorem ipsum marledsum",
+      "Lorem ipsum marledsum"
+    ]
+  }
+]
