@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Input = styled.div`
   width: 80%;
   margin: 2rem auto;
-`;
+`
 
 export const InputBox = styled.input`
   width: 100%;
@@ -19,4 +19,4 @@ export const InputBox = styled.input`
     outline: 0;
     border: 2px solid #ccc;
   }
-`;
+`

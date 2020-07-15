@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const InfoText = styled.h1`
   margin: 0;
@@ -14,4 +14,4 @@ export const InfoText = styled.h1`
   @media (min-width: ${({ theme }) => theme.breakpointLg}) {
     font-size: 4rem;
   }
-`;
+`

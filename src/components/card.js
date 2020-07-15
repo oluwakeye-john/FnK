@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const CardList = styled.div`
   display: flex;
@@ -8,7 +8,7 @@ export const CardList = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpointMd}) {
     flex-direction: column;
   }
-`;
+`
 
 export const Card = styled.div`
   background-color: #fff;
@@ -25,22 +25,29 @@ export const Card = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpointMd}) {
     width: 100%;
   }
-`;
+`
+
+export const CardBody = styled.div`
+  margin-left: 65px;
+  @media (max-width: ${({ theme }) => theme.breakpointMd}) {
+    margin-left: 0;
+  }
+`
 
 export const CardHeading = styled.h3`
   margin: 0;
   color: #474747;
-`;
+`
 
 export const CardText = styled.p`
   color: #757575;
   font-size: 16px;
-`;
+  margin: 0;
+`
 
 export const CardImg = styled.div`
   float: left;
-  margin-right: 20px;
-  height: 120%;
-`;
+  margin-right: 15px;
+`
 
-export default Card;
+export default Card

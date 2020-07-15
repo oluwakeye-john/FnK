@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
-import Button, { WhiteButton } from "./button";
+import styled from "styled-components"
+import { Link } from "react-router-dom"
+import Button, { WhiteButton } from "../../components/button"
 
 export const NavbarContainer = styled.div`
   background-color: ${({ theme }) => theme.primary};
@@ -21,7 +21,7 @@ export const NavbarContainer = styled.div`
   }
 
   position: relative;
-`;
+`
 
 export const NavbarLabel = styled.div`
   width: 20%;
@@ -35,7 +35,7 @@ export const NavbarLabel = styled.div`
     width: 40%;
     align-items: flex-start;
   }
-`;
+`
 
 export const NavbarToggle = styled.div`
   /* display: none; */
@@ -51,7 +51,7 @@ export const NavbarToggle = styled.div`
     margin-right: 30px;
     cursor: pointer;
   }
-`;
+`
 
 export const NavbarNav = styled.nav`
   background-color: ${({ theme }) => theme.primary};
@@ -84,7 +84,7 @@ export const NavbarNav = styled.nav`
   @media (max-width: ${({ theme }) => theme.breakpointMd}) {
     justify-content: flex-end;
   }
-`;
+`
 
 export const NavbarNav2 = styled(NavbarNav)`
   width: 40%;
@@ -96,7 +96,7 @@ export const NavbarNav2 = styled(NavbarNav)`
     justify-content: center;
     display: none;
   }
-`;
+`
 
 export const NavbarLink = styled(Link)`
   color: ${({ theme }) => theme.lightText};
@@ -109,7 +109,7 @@ export const NavbarLink = styled(Link)`
   @media (max-width: ${({ theme }) => theme.breakpointMd}) {
     margin: 1rem 10px;
   }
-`;
+`
 
 export const NavbarButton = styled(Button)`
   @media (max-width: ${({ theme }) => theme.breakpointMd}) {
@@ -121,10 +121,10 @@ export const NavbarButton = styled(Button)`
   @media (max-width: ${({ theme }) => theme.breakpointLg}) {
     padding: 1rem 2rem;
   }
-`;
+`
 
 export const NavbarWhiteButton = styled(WhiteButton)`
   @media (max-width: ${({ theme }) => theme.breakpointLg}) {
     padding: 1rem 2rem;
   }
-`;
+`

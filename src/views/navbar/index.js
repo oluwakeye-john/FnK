@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom"
-import Label from "../images/fnk.svg"
+import Label from "../../images/fnk.svg"
 
 import {
   NavbarContainer,
@@ -11,7 +11,7 @@ import {
   NavbarToggle,
   NavbarButton as Button,
   NavbarWhiteButton as WhiteButton,
-} from "./navbar.styles"
+} from "./styles"
 
 const linkItems = [
   {

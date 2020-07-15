@@ -1,10 +1,10 @@
-import React from "react";
-import Header from "../components/header";
-import styled from "styled-components";
+import React from "react"
+import Header from "../views/header"
+import styled from "styled-components"
 
-import { InfoText } from "../components/text";
+import { InfoText } from "../components/text"
 
-import SImage from "../images/rbq_enum 1.svg";
+import SImage from "../images/rbq_enum 1.png"
 
 const ServiceSection = styled.div`
   display: flex;
@@ -14,13 +14,13 @@ const ServiceSection = styled.div`
   margin: 0 auto;
   text-align: center;
   padding: 5rem 10px;
-`;
+`
 
 const ServiceImage = styled.img`
   mix-blend-mode: darken;
   max-width: 100%;
   width: 700px;
-`;
+`
 
 const ServiceHeading = styled.h1`
   color: ${({ theme }) => theme.headingText};
@@ -29,17 +29,17 @@ const ServiceHeading = styled.h1`
   @media (max-width: ${({ theme }) => theme.breakpointMd}) {
     font-size: 2rem;
   }
-`;
+`
 
 const ServiceText = styled.p`
   color: ${({ theme }) => theme.lighterText};
   font-size: 1.5rem;
-`;
+`
 
 const Home = () => {
   return (
     <div>
-      <Header>
+      <Header align="right">
         <InfoText>
           The first savings and investment platform you’ll love.{" "}
         </InfoText>
@@ -57,7 +57,7 @@ const Home = () => {
         </div>
       </ServiceSection>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

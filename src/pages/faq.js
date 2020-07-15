@@ -1,16 +1,16 @@
-import React from "react";
-import Header from "../components/header";
-import styled from "styled-components";
+import React from "react"
+import Header from "../views/header"
+import styled from "styled-components"
 
-import { InfoText } from "../components/text";
-import { Input, InputBox } from "../components/input";
+import { InfoText } from "../components/text"
+import { Input, InputBox } from "../components/input"
 
-import faqs from "../data/faqs.json";
+import faqs from "../data/faqs.json"
 
 const FaqList = styled.div`
   list-style-type: none;
   width: 100%;
-`;
+`
 
 const FaqItem = styled.div`
   display: flex;
@@ -21,7 +21,7 @@ const FaqItem = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpointMd}) {
     flex-direction: column;
   }
-`;
+`
 
 const FaqItemHeading = styled.h2`
   width: 30%;
@@ -32,7 +32,7 @@ const FaqItemHeading = styled.h2`
     width: 80%;
     font-size: 30px;
   }
-`;
+`
 
 const FaqItemQuestionList = styled.div`
   list-style-type: none;
@@ -45,7 +45,7 @@ const FaqItemQuestionList = styled.div`
     width: 100%;
     text-align: left;
   }
-`;
+`
 
 const FaqItemQuestion = styled.div`
   font-size: 20px;
@@ -57,7 +57,7 @@ const FaqItemQuestion = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpointMd}) {
     font-size: 20px;
   }
-`;
+`
 
 const QuestionList = ({ questions }) => {
   return (
@@ -66,8 +66,8 @@ const QuestionList = ({ questions }) => {
         <FaqItemQuestion key={index}>{que}</FaqItemQuestion>
       ))}
     </>
-  );
-};
+  )
+}
 
 const Faq = () => {
   return (
@@ -89,7 +89,7 @@ const Faq = () => {
         ))}
       </FaqList>
     </div>
-  );
-};
+  )
+}
 
-export default Faq;
+export default Faq

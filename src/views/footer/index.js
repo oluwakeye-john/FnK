@@ -1,13 +1,13 @@
-import React from "react";
-import styled from "styled-components";
+import React from "react"
+import styled from "styled-components"
 
-import Social from "../views/footer/social";
-import Info from "../views/footer/info";
+import Social from "./social"
+import Info from "./info"
 
-import footerBg1 from "../images/footerBg1.svg";
-import footerBg2 from "../images/footerBg2.svg";
-import footerBg3 from "../images/footerBg3.svg";
-import About from "../views/footer/about";
+import footerBg1 from "../../images/footerBg1.svg"
+import footerBg2 from "../../images/footerBg2.svg"
+import footerBg3 from "../../images/footerBg3.svg"
+import About from "./about"
 
 const FooterContainer = styled.div`
   color: rgba(255, 255, 255, 0.8);
@@ -22,7 +22,7 @@ const FooterContainer = styled.div`
     background-color: #313199;
     height: 100%;
   }
-`;
+`
 
 const FooterBox = styled.div`
   display: flex;
@@ -45,7 +45,7 @@ const FooterBox = styled.div`
   & > div {
     margin-bottom: 1.5rem;
   }
-`;
+`
 
 const FooterBkgs = styled.div`
   pointer-events: none;
@@ -54,7 +54,7 @@ const FooterBkgs = styled.div`
       display: none;
     }
   }
-`;
+`
 
 const FooterBg1 = styled.div`
   position: absolute;
@@ -68,7 +68,7 @@ const FooterBg1 = styled.div`
   height: 100%;
   color: #252D7C;
   z-index: -1;
-`;
+`
 
 const FooterBg2 = styled.div`
     position: absolute;
@@ -81,7 +81,7 @@ const FooterBg2 = styled.div`
   width: 100%;
   height: 100%;
   z-index: -1;
-`;
+`
 
 const FooterBg3 = styled.div`
     position: absolute;
@@ -94,7 +94,7 @@ const FooterBg3 = styled.div`
   width: 100%;
   height: 100%;
   z-index: -1;
-`;
+`
 
 const FooterBg4 = styled.div`
   background-color: #252d7c;
@@ -104,7 +104,7 @@ const FooterBg4 = styled.div`
   width: 100%;
   z-index: -1;
   left: 0;
-`;
+`
 
 const InfoFooter = styled.div`
   text-align: left;
@@ -113,7 +113,7 @@ const InfoFooter = styled.div`
     width: 100%;
     margin: 0;
   }
-`;
+`
 
 const AboutFooter = styled.div`
   text-align: left;
@@ -121,7 +121,7 @@ const AboutFooter = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpointMd}) {
     width: 100%;
   }
-`;
+`
 
 const SocialFooter = styled.div`
   text-align: left;
@@ -129,7 +129,7 @@ const SocialFooter = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpointMd}) {
     width: 100%;
   }
-`;
+`
 
 const Footer = () => {
   return (
@@ -152,7 +152,7 @@ const Footer = () => {
         </SocialFooter>
       </FooterBox>
     </FooterContainer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

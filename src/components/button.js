@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 const Button = styled.button`
   color: ${({ theme }) => theme.lightText};
@@ -22,7 +22,7 @@ const Button = styled.button`
   &:focus {
     outline: 0;
   }
-`;
+`
 
 export const WhiteButton = styled(Button)`
   background-color: ${({ theme }) => theme.textHover};
@@ -31,6 +31,6 @@ export const WhiteButton = styled(Button)`
     background-color: ${({ theme }) => theme.primary};
     color: ${({ theme }) => theme.lightText};
   }
-`;
+`
 
-export default Button;
+export default Button
