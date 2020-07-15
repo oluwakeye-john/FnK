@@ -46,7 +46,7 @@ const Home = () => {
       </Header>
       <ServiceSection>
         <div>
-          <ServiceImage src={SImage} />
+          <ServiceImage alt="Save with us" src={SImage} />
           <ServiceHeading>Why do we love what we do?</ServiceHeading>
           <ServiceText>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elit
