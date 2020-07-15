@@ -15,16 +15,16 @@ const GlobalStyles = createGlobalStyle`
     }
 
     body::-webkit-scrollbar {
-  width: 0.25rem;
-}
+        width: 0.25rem;
+    }
 
-body::-webkit-scrollbar-track {
-  background: #1e1e24;
-}
+    body::-webkit-scrollbar-track {
+        background: #1e1e24;
+    }
 
-body::-webkit-scrollbar-thumb {
-  background: #6649b8;
-}
+    body::-webkit-scrollbar-thumb {
+        background: #6649b8;
+    }
 `;
 
 export default GlobalStyles;

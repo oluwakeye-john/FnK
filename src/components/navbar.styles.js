@@ -40,11 +40,11 @@ export const NavbarLabel = styled.div`
 export const NavbarToggle = styled.div`
   /* display: none; */
   visibility: hidden;
-  transition: 0.5s;
+  transition: transform 0.5s;
   @media (max-width: ${({ theme }) => theme.breakpointMd}) {
     /* display: block; */
     visibility: visible;
-    transform: ${({ isOpen }) => (isOpen ? "rotate(90deg)" : "rotate(0deg)")};
+    transform: ${({ isOpen }) => (isOpen ? "rotate(180deg)" : "rotate(0deg)")};
     position: absolute;
     top: 30px;
     right: 0;

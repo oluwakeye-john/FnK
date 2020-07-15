@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import Label from "../images/fnk.svg";
+import React, { useState } from "react"
+import { Link } from "react-router-dom"
+import Label from "../images/fnk.svg"
 
 import {
   NavbarContainer,
@@ -11,7 +11,7 @@ import {
   NavbarToggle,
   NavbarButton as Button,
   NavbarWhiteButton as WhiteButton,
-} from "./navbar.styles";
+} from "./navbar.styles"
 
 const linkItems = [
   {
@@ -30,16 +30,16 @@ const linkItems = [
     name: "Learn",
     path: "/",
   },
-];
+]
 
 const Navbar = () => {
-  const [navbarOpen, setNavbarOpen] = useState(false);
+  const [navbarOpen, setNavbarOpen] = useState(false)
 
-  const toggler = React.createRef();
+  const toggler = React.createRef()
 
   const handleNavbarToggle = (e) => {
-    setNavbarOpen(!navbarOpen);
-  };
+    setNavbarOpen(!navbarOpen)
+  }
   return (
     <NavbarContainer>
       <NavbarLabel>
@@ -66,7 +66,7 @@ const Navbar = () => {
         <WhiteButton>Create A Free Account</WhiteButton>
       </NavbarNav2>
     </NavbarContainer>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
