@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 import Label from "../images/fnk.svg";
 
 import {
@@ -15,12 +15,12 @@ import {
 
 const linkItems = [
   {
-    name: "Customers",
-    path: "/",
+    name: "Faq",
+    path: "/faq",
   },
   {
-    name: "Products",
-    path: "/",
+    name: "Reviews",
+    path: "/reviews",
   },
   {
     name: "About",
@@ -35,23 +35,26 @@ const linkItems = [
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
+  const toggler = React.createRef();
+
   const handleNavbarToggle = (e) => {
-    e.target.className = !navbarOpen ? "fas fa-times" : "fas fa-bars";
     setNavbarOpen(!navbarOpen);
   };
   return (
     <NavbarContainer>
       <NavbarLabel>
-        <img src={Label} alt="fansksavings" />
+        <Link to="/">
+          <img src={Label} alt="fansksavings" ref={toggler} />
+        </Link>
       </NavbarLabel>
-      <NavbarToggle>
+      <NavbarToggle isOpen={navbarOpen}>
         <span
           onClick={handleNavbarToggle}
-          className="fas fa-bars"
+          className={navbarOpen ? "fas fa-times" : "fas fa-bars"}
           style={{ fontSize: "20px" }}
         />
       </NavbarToggle>
-      <NavbarNav isOpen={navbarOpen}>
+      <NavbarNav isOpen={navbarOpen} onClick={handleNavbarToggle}>
         {linkItems.map((item, index) => (
           <NavbarLink to={item.path} key={index}>
             {item.name}

@@ -7,7 +7,7 @@ import appStore from "../images/app-store.svg";
 
 export const DownloadButton = styled.a`
   display: inline-block;
-  padding: 15px 1rem;
+  padding: 13px 0.9rem;
   background-color: #2336ff;
   border-radius: 18.6753px;
   border: 0;

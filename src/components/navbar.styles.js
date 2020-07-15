@@ -38,9 +38,13 @@ export const NavbarLabel = styled.div`
 `;
 
 export const NavbarToggle = styled.div`
-  display: none;
+  /* display: none; */
+  visibility: hidden;
+  transition: 0.5s;
   @media (max-width: ${({ theme }) => theme.breakpointMd}) {
-    display: block;
+    /* display: block; */
+    visibility: visible;
+    transform: ${({ isOpen }) => (isOpen ? "rotate(90deg)" : "rotate(0deg)")};
     position: absolute;
     top: 30px;
     right: 0;
@@ -50,30 +54,47 @@ export const NavbarToggle = styled.div`
 `;
 
 export const NavbarNav = styled.nav`
-  width: 25%;
+  background-color: ${({ theme }) => theme.primary};
+  width: 35%;
   display: flex;
   justify-content: center;
   align-items: center;
+
   transition: 0.5s;
 
   @media (max-width: ${({ theme }) => theme.breakpointMd}) {
-    display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
-    visibility: ${({ isOpen }) => (isOpen ? "visible" : "hidden")};
+    transform: ${({ isOpen }) =>
+      isOpen ? "translateY(100px)" : "translateY(-60vh)"};
     flex-direction: column;
     width: 100%;
     align-items: flex-start;
     padding: 0 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+    z-index: 2;
+    background: linear-gradient(
+      to bottom,
+      ${({ theme }) => theme.primary},
+      #313199
+    );
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpointMd}) {
+    justify-content: flex-end;
   }
 `;
 
 export const NavbarNav2 = styled(NavbarNav)`
-  width: 50%;
+  width: 40%;
   justify-content: flex-end;
 
   @media (max-width: ${({ theme }) => theme.breakpointMd}) {
     width: 100%;
     align-items: center;
     justify-content: center;
+    display: none;
   }
 `;
 
@@ -96,6 +117,14 @@ export const NavbarButton = styled(Button)`
     width: 200px;
     margin-bottom: 1rem;
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpointLg}) {
+    padding: 1rem 2rem;
+  }
 `;
 
-export const NavbarWhiteButton = styled(WhiteButton)``;
+export const NavbarWhiteButton = styled(WhiteButton)`
+  @media (max-width: ${({ theme }) => theme.breakpointLg}) {
+    padding: 1rem 2rem;
+  }
+`;

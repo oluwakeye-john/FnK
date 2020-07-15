@@ -14,8 +14,9 @@ const PreFooterContainer = styled.div`
   justify-content: center;
   align-items: flex-start;
   background-color: #fff;
-  height: 90vh;
+  height: 34rem;
   position: relative;
+  padding: 0 20px;
 
   @media (max-width: ${({ theme }) => theme.breakpointMd}) {
     display: none;
@@ -26,8 +27,8 @@ const PreFooterContainer = styled.div`
 
 const PreFooterHeading = styled.h1`
   color: ${({ theme }) => theme.headingText};
-  font-size: 4.3rem;
-  max-width: 850px;
+  font-size: 3rem;
+  max-width: 590px;
   margin: 0 auto;
   margin-top: 4rem;
 
@@ -49,29 +50,27 @@ const PreFooterRightImage = styled(PreFooterImage)`
   background-position: top right;
   background-size: contain;
 
-  top: 100px;
+  top: 80px;
   right: 0;
-  width: 90%;
-  height: 90%;
+  width: 23%;
+  height: 105%;
   /* z-index: -1; */
 `;
 
 const PreFooterLeftImage = styled(PreFooterImage)`
-position: absolute;
-  background-size: contain;
-
-  top: -120px;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background: url('${prefooterleft}') no-repeat center;
   background-position: top left;
+  background-size: contain;
 
+  top: -100px;
+  left: 0;
+  width: 23%;
+  height: 65%;
 `;
 
 const PlantSection = styled(PreFooterImage)`
   position: absolute;
-  top: 30px;
+  top: -30px;
   right: 100px;
   width: 450px;
   height: 400px;

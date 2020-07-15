@@ -4,7 +4,8 @@ import styled from "styled-components";
 import BgShape from "../images/Bg Shape.svg";
 
 const HeaderComponent = styled.div`
-  min-height: 70vh;
+  /* min-height: 24rem; */
+  min-height: 27rem;
   width: 100%;
   background: url('${BgShape}') no-repeat center;
   background-position: bottom right;
@@ -16,6 +17,10 @@ const HeaderComponent = styled.div`
   align-items: center;
   background-color: ${({ theme }) => theme.bg};
   z-index: 1;
+
+  @media (max-width: ${({ theme }) => theme.breakpointMd}) {
+    height: 33rem;
+  }
 `;
 
 const HeaderBox = styled.div`

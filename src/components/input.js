@@ -13,6 +13,7 @@ export const InputBox = styled.input`
   border-radius: 20px;
   color: inherit;
   border: 2px solid ${({ theme }) => theme.primary};
+  transition: 0.3s;
 
   &:focus {
     outline: 0;

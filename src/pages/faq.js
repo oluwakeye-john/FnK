@@ -75,7 +75,7 @@ const Faq = () => {
       <Header>
         <InfoText>Frequently Asked Questions</InfoText>
         <Input>
-          <InputBox type="text" placeholder="Search for a question" />
+          <InputBox type="search" placeholder="Search for a question" />
         </Input>
       </Header>
       <FaqList>

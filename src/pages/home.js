@@ -13,7 +13,7 @@ const ServiceSection = styled.div`
   max-width: 750px;
   margin: 0 auto;
   text-align: center;
-  padding: 8rem 10px;
+  padding: 5rem 10px;
 `;
 
 const ServiceImage = styled.img`

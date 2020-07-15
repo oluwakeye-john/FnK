@@ -14,15 +14,17 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
     }
 
-    html::-webkit-scrollbar-thumb {
-        background: ${({ theme }) => theme.primary};
-        border-radius: 40px;
-        box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
-    }
+    body::-webkit-scrollbar {
+  width: 0.25rem;
+}
 
-    html::-webkit-scrollbar {
-        width: 10px;
-    }
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
 `;
 
 export default GlobalStyles;

@@ -17,6 +17,11 @@ const Button = styled.button`
     transform: scale(1.05);
     border: 1px solid ${({ theme }) => theme.lightText};
   }
+
+  &:active,
+  &:focus {
+    outline: 0;
+  }
 `;
 
 export const WhiteButton = styled(Button)`
