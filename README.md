@@ -1,4 +1,4 @@
-![Logo](./src/images/fnk.svg)
+![Logo](./logo.png)
 
 ### Tool Stack
 
